@@ -68,4 +68,20 @@ public  class WeiXinController  extends BaseController {
         }
         return getFailResult("处理失败");
     }
+
+    public void setCorpId(String corpId) {
+        this.corpId = corpId;
+    }
+
+    public void setEncodingAESKey(String encodingAESKey) {
+        EncodingAESKey = encodingAESKey;
+    }
+
+    public void setCorpSecret(String corpSecret) {
+        this.corpSecret = corpSecret;
+    }
+
+    public void setHandleMessageService(HandleMessageService handleMessageService) {
+        this.handleMessageService = handleMessageService;
+    }
 }
