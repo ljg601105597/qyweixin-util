@@ -3,7 +3,7 @@ package com.qianmi.qyweixin.bean;
 import com.qianmi.qyweixin.help.decrypt.AesException;
 import com.qianmi.qyweixin.help.decrypt.WXBizMsgCrypt;
 import org.apache.commons.codec.digest.DigestUtils;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang.StringUtils;
 
 import java.io.Serializable;
 import java.util.Arrays;
