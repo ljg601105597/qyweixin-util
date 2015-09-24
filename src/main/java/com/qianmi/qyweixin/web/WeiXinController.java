@@ -1,6 +1,5 @@
 package com.qianmi.qyweixin.web;
 
-import com.alibaba.fastjson.JSON;
 import com.qianmi.qyweixin.bean.MessageEntity;
 import com.qianmi.qyweixin.help.IMessage;
 import com.qianmi.qyweixin.help.ParserXmlMessage;
@@ -10,8 +9,6 @@ import me.chanjar.weixin.cp.api.WxCpInMemoryConfigStorage;
 import me.chanjar.weixin.cp.api.WxCpService;
 import me.chanjar.weixin.cp.api.WxCpServiceImpl;
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,7 +22,6 @@ import java.util.Map;
 @RequestMapping("/qyweixin")
 public  class WeiXinController  extends BaseController {
 
-    private static final Logger logger = LoggerFactory.getLogger(WeiXinController.class);
     private String corpId;
     private String EncodingAESKey;
     private String corpSecret;
